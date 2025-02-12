@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Tours</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body style="text-align: center;">
+    <h1>Asia Tours Schedule for Hockey Team</h1>
+        {% for tour in tours %}
+        <li>{{tour}}</li>
+        {% endfor %}
+</body>
+</html>
