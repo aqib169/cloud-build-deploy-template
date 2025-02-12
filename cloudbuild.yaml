@@ -16,3 +16,8 @@ steps:
         terraform init
         terraform apply -auto-approve -var "docker_image=gcr.io/$PROJECT_ID/django-app:$SHORT_SHA"
     id: Apply Terraform
+
+options:
+  logging: CLOUD_LOGGING_ONLY  # Use Cloud Logging for build logs
+  # Alternatively, you can specify a logs_bucket
+  # logsBucket: gs://YOUR_LOGS_BUCKET_NAME
