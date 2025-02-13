@@ -17,7 +17,6 @@ Ensure you have Docker installed on your system:
    ```bash
       docker-compose up --build -d
    ```
-
 ## Setting Up on Cloud Run
 
 -  Authenticate with the GCP account and setup the project
