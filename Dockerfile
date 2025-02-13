@@ -14,4 +14,4 @@ COPY . /app
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "python manage.py makemigrations && python manage.py migrate --noinput && python manage.py seed_db && gunicorn worldtour.wsgi:application --bind 0.0.0.0:8000 --workers 3"]
+CMD ["sh", "-c", "python manage.py makemigrations && python manage.py migrate --noinput && python manage.py seed_db && python manage.py runserver 0.0.0.0:8000"]
