@@ -98,6 +98,6 @@ variable "machine_type" {
 variable "docker_image" {
   description = "The Docker image to deploy"
   type        = string
-  default     = "gcr.io/for-testing-432707/django-image:latest"
+  default     = "gcr.io/for-testing-432707/django-app:latest"
   
 }
